@@ -1,4 +1,4 @@
-# Portfolio V2 - Modern Design
+# riz3 - Modern Design
 
 A modern, sleek portfolio website built with Next.js 14, featuring smooth animations with Framer Motion and a contemporary design.
 
@@ -30,7 +30,7 @@ A modern, sleek portfolio website built with Next.js 14, featuring smooth animat
 
 ## 🎨 Design Philosophy
 
-This V2 version embraces a modern, sophisticated aesthetic with:
+This version embraces a modern, sophisticated aesthetic with:
 
 - **Professional Dark Theme**: Carefully crafted color palette with semantic color system
 - **Advanced Animation System**: Hardware-accelerated animations with SSR support
@@ -103,16 +103,6 @@ components/
 - **Client Components**: Used only when interactivity is required
 - **React Hooks**: Local state management for forms and UI state
 
-## 🌟 Key Improvements from V1
-
-- **Enhanced Visual Design**: Modern gradient system with interactive background animations
-- **Professional Animation System**: Framer Motion with LazyMotion for SSR optimization
-- **Improved Performance**: Code splitting, lazy loading, and optimized bundle size
-- **Better SEO**: Comprehensive metadata, sitemap, manifest, and structured data
-- **Accessibility**: WCAG 2.1 compliant with proper focus management
-- **Developer Experience**: TypeScript strict mode, ESLint, and Prettier configuration
-- **Mobile-First Design**: Touch-friendly interactions and responsive typography
-- **Advanced Architecture**: Server components, client components separation, and proper SSR patterns
 
 ## 🚀 Deployment
 
@@ -127,9 +117,9 @@ This portfolio is designed to be deployed on modern platforms like:
 
 For any questions or collaborations, feel free to reach out:
 
-- **Email**: hi@ahammadabdullah.dev
-- **LinkedIn**: [ahammad-abdullah](https://www.linkedin.com/in/ahammad-abdullah/)
-- **GitHub**: [ahammadabdullah](https://github.com/ahammadabdullah)
+- **Email**: dev@rafizaman.me
+- **LinkedIn**: [ahammad-abdullah](https://www.linkedin.com/in/rafi-irfan-zaman/)
+- **GitHub**: [ahammadabdullah](https://github.com/rafi983)
 
 ## 📄 License
 
@@ -137,4 +127,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-_Built with ❤️ by Ahammad Abdullah_
+_Built with ❤️ by rafi zaman
