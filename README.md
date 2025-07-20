@@ -118,8 +118,8 @@ This portfolio is designed to be deployed on modern platforms like:
 For any questions or collaborations, feel free to reach out:
 
 - **Email**: dev@rafizaman.me
-- **LinkedIn**: [ahammad-abdullah](https://www.linkedin.com/in/rafi-irfan-zaman/)
-- **GitHub**: [ahammadabdullah](https://github.com/rafi983)
+- **LinkedIn**: [rafi-irfan-zaman](https://www.linkedin.com/in/rafi-irfan-zaman/)
+- **GitHub**: [rafi983](https://github.com/rafi983)
 
 ## 📄 License
 
