@@ -1,9 +1,9 @@
-import taskify from "@/assets/taskify.png";
-import edumi from "@/assets/edumi.png";
-import foodshare from "@/assets/foodshare.png";
-import portfolio from "@/assets/portfolio.png";
-import aiSaaSBoilerplate from "@/assets/ai-saas-boilerplate.png";
-import sellto from "@/assets/sellto.png";
+import cognitionx from "@/assets/cognitionX.png";
+import converter from "@/assets/converter.png";
+import farmfresh from "@/assets/farmfresh.png";
+import gta6 from "@/assets/gta6.png";
+import photobooth from "@/assets/photobooth.png";
+import aistudio from "@/assets/aistudio.png";
 
 export interface Project {
   title: string;
@@ -18,71 +18,75 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Sellto",
+    title: "AI Studio",
     description:
-      "The simplest digital store solution. Sellto is an all-in-one platform to start, run, and grow a digital business from software to communities and everything else.",
-    image: sellto,
-    technologies: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
+        "A feature-rich, single-page web application that provides a user-friendly studio for generating images using the Pollinations AI service. Create, manage, and save AI‑generated artwork in a clean, modern interface.",
+    image: aistudio,
+    technologies: ["React", "TypeScript", "Pollinations AI"],
     links: {
-      live: "https://beta.sellto.io",
+      // TODO: replace with real links
+      live: "https://ai-lws-studio.vercel.app/",
+      github: "https://github.com/rafi983/lws_ai-studio",
     },
     featured: true,
   },
   {
-    title: "AI SaaS Boilerplate",
+    title: "CognitionX",
     description:
-      "A comprehensive AI SaaS application boilerplate that integrates cutting-edge AI features, modular components, customizable email templates, and secure payment processing.",
-    image: aiSaaSBoilerplate,
-    technologies: ["Next.js", "OpenAI", "Stripe", "Prisma", "PostgreSQL"],
+        "CognitionX is an AI conversation platform built with Next.js that goes beyond simple chat: experiments, evaluation, analytics, and conversation management.",
+    image: cognitionx,
+    technologies: ["Next.js", "TypeScript", "Gemini", "MongoDB", "Mongoose"],
     links: {
-      live: "https://ai-saas-template-three.vercel.app",
-    },
-    featured: true,
-  },
-  {
-    title: "Taskify",
-    description:
-      "Effortless Task Mastery: Elevate Your Productivity with our MERN Stack Todo Website featuring Seamless Drag-and-Drop Functionality!",
-    image: taskify,
-    technologies: ["React", "Node.js", "MongoDB", "Express", "DnD Kit"],
-    links: {
-      live: "https://taskify-ahammad-abdullah.web.app/",
-      github: "https://github.com/ahammadabdullah/taskify",
+      // TODO: replace with real links
+      live: "https://cognition-x-xi.vercel.app/",
+      github: "https://github.com/rafi983/CognitionX",
     },
   },
   {
-    title: "Edumi",
-    description:
-      "Empowered educators and engaged students through Edumi, a dynamic online learning platform built with MERN stack.",
-    image: edumi,
-    technologies: ["React", "Node.js", "MongoDB", "Express", "JWT"],
+    title: "ASCII Converter",
+    description: "A lightweight web tool that converts images into ASCII art.",
+    image: converter,
+    technologies: ["Next.js", "Tailwind Merge", "clsx", "Canvas"],
     links: {
-      live: "https://edumi-453a2.web.app/",
-      client: "https://github.com/ahammadabdullah/edumi-client",
-      server: "https://github.com/ahammadabdullah/edumi-server",
+      // TODO: replace with real links
+      live: "https://ascii-converter-three.vercel.app/",
+      github: "https://github.com/rafi983/ascii_converter",
     },
   },
   {
-    title: "Community Food Share",
+    title: "FarmFresh",
     description:
-      "A platform that empowers individuals to donate and receive food, fostering a sense of community and tackling food insecurity.",
-    image: foodshare,
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Firebase"],
+        "Multi‑vendor e‑commerce where farmers sell directly to consumers, removing middlemen and ensuring fresh produce.",
+    image: farmfresh,
+    technologies: ["React", "Next.js", "MongoDB", "Mongoose", "JWT", "Next-Auth"],
     links: {
-      live: "https://community-food-share.web.app",
-      client: "https://github.com/ahammadabdullah/community-food-share-client",
-      server: "https://github.com/ahammadabdullah/community-food-share-server",
+      // TODO: replace with real links
+      live: "https://farm-fresh-lyart.vercel.app/",
+      github: "https://github.com/rafi983/FarmFresh",
     },
   },
   {
-    title: "Portfolio V1",
+    title: "GTA VI Community",
     description:
-      "Explore my expertise through a user-friendly, secure portfolio showcasing my work in the MERN stack.",
-    image: portfolio,
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Material-UI"],
+        "A gaming community experience where players connect, share highlights, and follow news and events for the GTA series.",
+    image: gta6,
+    technologies: ["React", "GSAP", "Tailwind CSS"],
     links: {
-      live: "https://ahammad-abdullah.web.app",
-      github: "https://github.com/ahammadabdullah/portfolio",
+      // TODO: replace with real links
+      live: "https://example.com/gta-vi-community",
+      github: "https://github.com/rafi983/GTA-VI",
+    },
+  },
+  {
+    title: "PhotoBooth",
+    description:
+        "A modern social photo app with responsive UI for sharing and interacting with images.",
+    image: photobooth,
+    technologies: ["React", "Firebase", "React Router", "Zustand", "React Hook Form"],
+    links: {
+      // TODO: replace with real links
+      live: "https://photo-booth-virid.vercel.app/",
+      github: "https://github.com/rafi983/PhotoBooth",
     },
   },
 ];

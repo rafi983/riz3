@@ -14,26 +14,28 @@ const ContactHero = () => {
         $ ./contact.sh --init
       </h1>
 
-      <div className="terminal max-w-3xl mx-auto text-left mb-8">
-        <div className="terminal-header">contact@ahammad:~$</div>
-        <div className="font-mono text-sm">
-          <span className="text-terminal-green">$</span>{" "}
-          <span className="text-terminal-blue">ping collaboration.network</span>
-          <br />
-          <span className="text-text-secondary">
-            PING collaboration.network (192.168.1.1): 56 data bytes
-          </span>
-          <br />
-          <span className="text-text-secondary">
-            64 bytes from developer: icmp_seq=0 ttl=64 time=0.1ms
-          </span>
-          <br />
-          <span className="text-terminal-green">$</span>{" "}
-          <span className="text-terminal-blue">
-            echo "Always ready to connect!"
-          </span>
-          <br />
-          <span className="text-text-secondary">Always ready to connect!</span>
+      <div className="flex justify-center mb-8">
+        <div className="terminal max-w-3xl text-left">
+          <div className="terminal-header">contact@rafizaman:~$</div>
+          <div className="font-mono text-sm">
+            <span className="text-terminal-green">$</span>{" "}
+            <span className="text-terminal-blue">ping collaboration.network</span>
+            <br />
+            <span className="text-text-secondary">
+              PING collaboration.network (192.168.1.1): 56 data bytes
+            </span>
+            <br />
+            <span className="text-text-secondary">
+              64 bytes from developer: icmp_seq=0 ttl=64 time=0.1ms
+            </span>
+            <br />
+            <span className="text-terminal-green">$</span>{" "}
+            <span className="text-terminal-blue">
+              echo "Always ready to connect!"
+            </span>
+            <br />
+            <span className="text-text-secondary">Always ready to connect!</span>
+          </div>
         </div>
       </div>
 

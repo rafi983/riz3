@@ -22,30 +22,32 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
         $ ls ./projects/
       </h1>
 
-      <div className="terminal max-w-3xl mx-auto text-left mb-8">
-        <div className="terminal-header">projects@portfolio:~$</div>
-        <div className="font-mono text-sm">
-          <span className="text-terminal-green">$</span>{" "}
-          <span className="text-terminal-blue">
-            find . -name "*.project" -type f
-          </span>
-          <br />
-          <span className="text-text-secondary">
-            ./frontend/react-projects/
-          </span>
-          <br />
-          <span className="text-text-secondary">./backend/node-apis/</span>
-          <br />
-          <span className="text-text-secondary">./fullstack/web-apps/</span>
-          <br />
-          <span className="text-terminal-green">$</span>{" "}
-          <span className="text-terminal-blue">
-            echo "Building the future, one commit at a time"
-          </span>
-          <br />
-          <span className="text-text-secondary">
-            Building the future, one commit at a time
-          </span>
+      <div className="flex justify-center mb-8">
+        <div className="terminal max-w-3xl text-left">
+          <div className="terminal-header">projects@portfolio:~$</div>
+          <div className="font-mono text-sm">
+            <span className="text-terminal-green">$</span>{" "}
+            <span className="text-terminal-blue">
+              find . -name "*.project" -type f
+            </span>
+            <br />
+            <span className="text-text-secondary">
+              ./frontend/react-projects/
+            </span>
+            <br />
+            <span className="text-text-secondary">./backend/node-apis/</span>
+            <br />
+            <span className="text-text-secondary">./fullstack/web-apps/</span>
+            <br />
+            <span className="text-terminal-green">$</span>{" "}
+            <span className="text-terminal-blue">
+              echo "Building the future, one commit at a time"
+            </span>
+            <br />
+            <span className="text-text-secondary">
+              Building the future, one commit at a time
+            </span>
+          </div>
         </div>
       </div>
 
