@@ -30,16 +30,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         project.featured ? "ring-2 ring-accent glow-dev" : ""
       }`}
     >
-      <div
-        className={`grid grid-cols-1 ${
-          project.featured ? "xl:grid-cols-2" : "lg:grid-cols-3"
-        } gap-4 lg:gap-6`}
-      >
-        <div
-          className={`relative order-1 ${
-            project.featured ? "xl:col-span-1" : "lg:col-span-1"
-          }`}
-        >
+      <div className={`grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-6`}>
+        <div className="relative order-1 xl:col-span-1">
           <div className="aspect-video w-full rounded-lg overflow-hidden border border-border">
             <Image
               src={project.image}
@@ -60,11 +52,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           </div>
         </div>
 
-        <div
-          className={`order-2 ${
-            project.featured ? "xl:col-span-1" : "lg:col-span-2"
-          }`}
-        >
+        <div className="order-2 xl:col-span-1">
           <div className="mb-4">
             <h3 className="text-xl lg:text-2xl font-bold mb-2 text-terminal-green font-mono">
               {project.title}

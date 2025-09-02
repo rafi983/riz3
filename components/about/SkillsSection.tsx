@@ -2,37 +2,37 @@
 
 import { m } from "@/providers/MotionProvider";
 import { FaCode, FaServer, FaTools, FaLightbulb } from "react-icons/fa";
-import { skillsData } from "./AboutData";
+import { aboutSkillsData } from "@/components/about/skillsData";
 
 const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Frontend",
       icon: FaCode,
-      skills: skillsData.frontend,
+      skills: aboutSkillsData.frontend,
       extension: ".tsx",
       import: "import React from 'react';",
     },
     {
       title: "Backend",
       icon: FaServer,
-      skills: skillsData.backend,
+      skills: aboutSkillsData.backend,
       extension: ".js",
       import: "const express = require('express');",
     },
     {
       title: "Tools",
       icon: FaTools,
-      skills: skillsData.tools,
+      skills: aboutSkillsData.tools,
       extension: ".sh",
       import: "#!/bin/bash",
     },
     {
       title: "Other",
       icon: FaLightbulb,
-      skills: skillsData.other,
-      extension: ".md",
-      import: "# Documentation",
+      skills: aboutSkillsData.database,
+      extension: ".sql",
+      import: "-- Database Query",
     },
   ];
 
