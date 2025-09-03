@@ -2,7 +2,6 @@
 
 import { m } from "@/providers/MotionProvider";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 
 const AboutHero = () => {
   return (
@@ -85,14 +84,6 @@ const AboutHero = () => {
         >
           <span>$ ./contact.sh</span>
         </Link>
-        <a
-          href="/Ahammad_Abdullah_fullstack.pdf"
-          download
-          className="btn-github px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center space-x-2"
-        >
-          <FaDownload className="w-4 h-4" />
-          <span>$ download --resume</span>
-        </a>
       </div>
     </m.div>
   );

@@ -15,7 +15,7 @@ const ContactHero = () => {
       </h1>
 
       <div className="flex justify-center mb-8">
-        <div className="terminal max-w-3xl text-left">
+        <div className="terminal max-w-4xl text-left">
           <div className="terminal-header">contact@rafizaman:~$</div>
           <div className="font-mono text-sm">
             <span className="text-terminal-green">$</span>{" "}

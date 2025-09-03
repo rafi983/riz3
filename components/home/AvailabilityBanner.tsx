@@ -1,6 +1,7 @@
 "use client";
 
 import { m } from "@/providers/MotionProvider";
+import Link from "next/link";
 
 const AvailabilityBanner = () => {
   return (
@@ -17,14 +18,14 @@ const AvailabilityBanner = () => {
             <span className="status-online">Open</span>
             <div className="font-mono text-sm text-text">Currently available for select projects</div>
           </div>
-          <m.a
-            href="/contact"
-            className="btn-primary-dev px-5 py-2.5 rounded-lg font-mono"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            $ get in touch
-          </m.a>
+          <m.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+              href="/contact"
+              className="btn-primary-dev px-5 py-2.5 rounded-lg font-mono inline-block"
+            >
+              $ get in touch
+            </Link>
+          </m.div>
         </m.div>
       </div>
     </section>
@@ -32,4 +33,3 @@ const AvailabilityBanner = () => {
 };
 
 export default AvailabilityBanner;
-

@@ -23,7 +23,7 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
       </h1>
 
       <div className="flex justify-center mb-8">
-        <div className="terminal max-w-3xl text-left">
+        <div className="terminal max-w-4xl text-left">
           <div className="terminal-header">projects@portfolio:~$</div>
           <div className="font-mono text-sm">
             <span className="text-terminal-green">$</span>{" "}
@@ -46,6 +46,15 @@ const ProjectHeader: React.FC<ProjectHeaderProps> = ({
             <br />
             <span className="text-text-secondary">
               Building the future, one commit at a time
+            </span>
+            <br />
+            <span className="text-terminal-green">$</span>{" "}
+            <span className="text-terminal-blue">
+              echo "Exploring the depths of code, and loving every minute"
+            </span>
+            <br />
+            <span className="text-text-secondary">
+              Exploring the depths of code, and loving every minute
             </span>
           </div>
         </div>
