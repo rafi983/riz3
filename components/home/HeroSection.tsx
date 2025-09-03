@@ -6,7 +6,6 @@ import {
   FaLinkedin,
   FaTwitter,
   FaInstagram,
-  FaDownload,
 } from "react-icons/fa";
 
 const socialLinks = [
@@ -115,8 +114,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ heroInView }) => {
           </m.div>
         </m.div>
 
-        <m.div variants={itemVariants} className="mb-12">
-          <div className="code-block max-w-2xl mx-auto text-left">
+        <m.div variants={itemVariants} className="mb-12 flex justify-center">
+          <div className="code-block text-left max-w-2xl w-full">
             <pre className="text-sm">
               <code>
                 <span className="syntax-keyword">const</span>{" "}
@@ -146,18 +145,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ heroInView }) => {
           className="flex flex-wrap justify-center gap-4 mb-12"
         >
           <m.a
-            href="/Ahammad_Abdullah_fullstack.pdf"
-            download
-            className="btn-primary-dev px-6 py-3 rounded-lg font-medium flex items-center space-x-2 glow-dev"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <FaDownload className="w-4 h-4" />
-            <span>$ download --resume</span>
-          </m.a>
-          <m.a
             href="/projects"
-            className="btn-github px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center space-x-2"
+            className="btn-primary-dev px-6 py-3 rounded-lg font-medium flex items-center space-x-2 glow-dev"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

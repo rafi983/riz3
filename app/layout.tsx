@@ -3,7 +3,6 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Navbar from "@/components/Navbar";
-import VersionSwitcher from "@/components/VersionSwitcher";
 import { MotionProvider } from "@/providers/MotionProvider";
 
 const jetBrainsMono = JetBrains_Mono({
@@ -120,7 +119,6 @@ export default function RootLayout({
                 },
               }}
             />
-            <VersionSwitcher />
             <Navbar />
             <main className="pt-16 relative z-10">{children}</main>
           </div>
