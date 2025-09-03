@@ -3,7 +3,6 @@
 import { useInView } from "react-intersection-observer";
 import { useState, useRef, useEffect } from "react";
 import { FaPaperPlane } from "react-icons/fa";
-import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import ContactHero from "@/components/contact/ContactHero";
 import ContactInfo from "@/components/contact/ContactInfo";
@@ -41,21 +40,26 @@ const ContactPage = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    if (!formRef.current) {
-      toast.error("Please fill out the form before submitting.");
-      setIsSubmitting(false);
-      return;
-    }
+
     try {
-      await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_emailJsServiceID || "",
-        process.env.NEXT_PUBLIC_emailsTemplateID || "",
-        formRef.current!,
-        process.env.NEXT_PUBLIC_emailjsPublicKey || ""
-      );
-      toast.success("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        toast.success("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        toast.error(result.error || "Failed to send message. Please try again.");
+      }
     } catch (error) {
+      console.error("Contact form error:", error);
       toast.error("Failed to send message. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -271,10 +275,12 @@ const ContactPage = () => {
                   placeholder="Hello! I'd like to discuss..."
                 />
               </div>
-              <button
+              <m.button
                 type="submit"
                 disabled={isSubmitting}
                 className="w-full btn-primary-dev py-3 rounded-lg font-medium flex items-center justify-center space-x-2 glow-dev"
+                whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
+                whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
               >
                 {isSubmitting ? (
                   <>
@@ -287,7 +293,7 @@ const ContactPage = () => {
                     <span>$ send --message</span>
                   </>
                 )}
-              </button>
+              </m.button>
             </form>
           </div>
         )}
