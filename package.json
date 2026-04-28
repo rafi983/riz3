@@ -2,6 +2,9 @@
   "name": "portfolio-v2",
   "version": "2.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +13,7 @@
   },
   "dependencies": {
     "framer-motion": "^11.11.17",
-    "next": "^15.1.0",
+    "next": "^16.2.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hot-toast": "^2.4.1",
