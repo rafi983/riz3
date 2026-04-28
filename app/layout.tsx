@@ -13,7 +13,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ahammadabdullah.dev"),
+  metadataBase: new URL("https://rafizaman.com"),
   title: {
     default: "Rafi Zaman - Frontend Developer",
     template: "%s | Rafi Zaman",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "Rafi Zaman",
     "Portfolio",
   ],
-  authors: [{ name: "Rafi Zaman", url: "https://github.com/ahammadabdullah" }],
+  authors: [{ name: "Rafi Zaman", url: "https://github.com/rafizaman" }],
   creator: "Rafi Zaman",
   publisher: "Rafi Zaman",
   robots: {
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ahammadabdullah.dev",
+    url: "https://rafizaman.dev",
     title: "Rafi Zaman - Full Stack Developer",
     description:
       "Experienced Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. Creating scalable, efficient digital solutions.",
@@ -72,10 +72,10 @@ export const metadata: Metadata = {
     description:
       "Experienced Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
     images: ["/og-image.png"],
-    creator: "@ahammadabdullah",
+    creator: "@rafizaman",
   },
   alternates: {
-    canonical: "https://ahammadabdullah.dev",
+    canonical: "https://rafizaman.dev",
   },
   verification: {
     google: "your-google-verification-code",
@@ -91,7 +91,6 @@ export default function RootLayout({
     <html lang="en" className={jetBrainsMono.variable}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.svg" />
         <meta name="theme-color" content="#0A0A0A" />
       </head>
       <body className={`${jetBrainsMono.className} font-mono`}>

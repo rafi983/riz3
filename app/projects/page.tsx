@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       "Explore innovative projects showcasing expertise in modern web technologies and full-stack development.",
     type: "website",
-    url: "https://ahammadabdullah.dev/projects",
+    url: "https://rafizaman.dev/projects",
   },
 };
 

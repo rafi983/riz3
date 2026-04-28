@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "Get in touch for collaboration opportunities and project discussions.",
     type: "website",
-    url: "https://ahammadabdullah.dev/contact",
+    url: "https://rafizaman.dev/contact",
   },
 };
 

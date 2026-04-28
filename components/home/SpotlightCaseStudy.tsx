@@ -9,8 +9,10 @@ const SpotlightCaseStudy = () => {
   if (!featured) return null;
 
   return (
-    <section className="py-16 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section className="pt-0 pb-12 md:pb-20 px-4 relative overflow-hidden mt-[-2rem]">
+      <div className="absolute inset-0 bg-terminal-green/5 blur-3xl rounded-full w-1/2 h-1/2 -top-1/4 -right-1/4 pointer-events-none" />
+
+      <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold gradient-text font-mono">$ cat ./spotlight.md</h2>
           <p className="text-text-secondary mt-2">A closer look at a recent build</p>

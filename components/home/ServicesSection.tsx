@@ -1,37 +1,50 @@
 "use client";
 
 import { m } from "@/providers/MotionProvider";
-import { FaRobot, FaChartLine, FaShoppingCart, FaUsers, FaCamera } from "react-icons/fa";
+import { FaRobot, FaShoppingCart, FaUsers, FaCamera } from "react-icons/fa";
 
 const services = [
 	{
-		title: "AI Apps (Chat, Studio, Images)",
+		title: "AI Integration (Chat & Generative)",
 		icon: FaRobot,
 		blurb:
-			"Next.js AI products: chat platforms and image studios powered by Gemini and Pollinations.",
-		code: `const res = await gemini.generateContent({ model: 'gemini-1.5-flash', input });`,
-		tags: ["Next.js", "TypeScript", "Gemini", "Pollinations", "MongoDB"],
+			"Building feature-rich, high-performance Next.js platforms utilizing cutting-edge AI models like Gemini and Pollinations.",
+		code: `const response = await ai.generateConfig({
+  model: 'gemini-pro',
+  temperature: 0.8
+});`,
+		tags: ["Next.js", "TypeScript", "Gemini", "Pollinations AI", "MongoDB"],
 	},
 	{
-		title: "E‑commerce (Multi‑vendor)",
+		title: "Full-Stack Multi-Vendor E‑commerce",
 		icon: FaShoppingCart,
-		blurb: "Catalogs, carts, orders, payments, auth, and admin flows that scale.",
-		code: `const order = await orders.insertOne({ items, userId, createdAt: Date.now() });`,
-		tags: ["React", "Next.js", "MongoDB", "Mongoose", "JWT", "Next-Auth"],
+		blurb: "End-to-end marketplaces with dynamic carts, guarded routes, complex aggregation, and scalable product architecture.",
+		code: `const vendorItems = await Product.aggregate([
+  { $match: { vendor: req.user.id } },
+  { $sort: { createdAt: -1 } }
+]);`,
+		tags: ["React", "Next.js", "MongoDB", "JWT", "Next-Auth"],
 	},
 	{
-		title: "Social & Community Apps",
+		title: "Interactive Gaming Communities",
 		icon: FaUsers,
-		blurb: "Feeds, profiles, media, and real-time updates with smooth UX.",
-		code: `app.post('/posts', auth, async (req, res) => { const post = await db.Posts.create(req.body); res.json(post); });`,
-		tags: ["React", "Firebase", "GSAP", "Zustand"],
+		blurb: "Immersive community hubs combining robust nested routing, deep scroll triggers, and pixel-perfect tailored UI.",
+		code: `useGSAP(() => {
+  gsap.to(".hero-element", { 
+    y: -100, scrollTrigger: { scrub: true } 
+  });
+});`,
+		tags: ["React", "GSAP", "Tailwind CSS", "Zustand"],
 	},
 	{
-		title: "Media Tools (Converters & Photo Apps)",
+		title: "Media Processing Utilities",
 		icon: FaCamera,
-		blurb: "Lightweight image utilities (ASCII, galleries) and fast photo-sharing UIs.",
-		code: `function toAscii(img) { /* map pixels -> chars */ return ascii; }`,
-		tags: ["React", "Vite", "Canvas", "Firebase"],
+		blurb: "Lightweight, zero-dependency tools for real-time instantaneous image processing and responsive social gallery interactions.",
+		code: `const processImage = (ctx) => {
+  const imageData = ctx.getImageData(0, 0, width, height);
+  return mapPixelsToAscii(imageData);
+};`,
+		tags: ["Next.js", "React", "Canvas API", "Firebase"],
 	},
 ];
 
