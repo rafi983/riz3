@@ -2,6 +2,7 @@
 
 import { m } from "@/providers/MotionProvider";
 import Image from "next/image";
+import Link from "next/link";
 import { Project } from "./ProjectData";
 import { getLinkIcon, getLinkLabel } from "./ProjectUtils";
 
@@ -54,9 +55,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 
         <div className="order-2 xl:col-span-1">
           <div className="mb-4">
-            <h3 className="text-xl lg:text-2xl font-bold mb-2 text-terminal-green font-mono">
-              {project.title}
-            </h3>
+            <Link href={`/projects/${project.id}`}>
+              <h3 className="text-xl lg:text-2xl font-bold mb-2 text-terminal-green font-mono hover:text-accent transition-colors">
+                {project.title}
+              </h3>
+            </Link>
             <p className="text-text-secondary leading-relaxed text-sm lg:text-base">
               {project.description}
             </p>
@@ -108,6 +111,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                 </span>
               </m.a>
             ))}
+            <Link href={`/projects/${project.id}`} passHref legacyBehavior>
+              <m.a
+                className="flex items-center space-x-2 bg-terminal-green/10 hover:bg-terminal-green/20 text-terminal-green px-3 lg:px-4 py-2 rounded-full transition-colors duration-200 text-xs lg:text-sm"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span className="font-medium font-mono">Details {"->"}</span>
+              </m.a>
+            </Link>
           </div>
         </div>
       </div>

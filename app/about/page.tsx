@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "Learn more about Rafi Zaman, a passionate Full Stack Developer with expertise in modern web technologies.",
     type: "profile",
-    url: "https://ahammadabdullah.dev/about",
+    url: "https://rafizaman.dev/about",
   },
 };
 

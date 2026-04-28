@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ahammadabdullah.dev
+Host: https://rafizaman.dev
 
 # Sitemaps
-Sitemap: https://ahammadabdullah.dev/sitemap.xml
+Sitemap: https://rafizaman.dev/sitemap.xml
