@@ -2,8 +2,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 // Basic input validation
 const isValidEmail = (email: string) => /.+@.+\..+/.test(email);
 
@@ -31,6 +29,8 @@ export async function POST(req: NextRequest) {
         { status: 500 }
       );
     }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     const toEmail = process.env.CONTACT_TO_EMAIL || "rafiirfan211@gmail.com";
     const fromEmail = process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev";
